@@ -28,7 +28,7 @@ const ImageSlider: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full lg:w-[630px] h-[450px] overflow-hidden rounded-lg mx-auto shadow-lg border-[#5F8184]  border-t-8 border-x-8">
+    <div className="relative w-full lg:w-[630px] h-[450px] overflow-hidden rounded-lg mx-auto shadow-lg ">
       {/* Slides */}
       <div className="relative w-full lg:w-[630px] h-[750px]">
         {slides.map((slide, index) => (
@@ -49,13 +49,13 @@ const ImageSlider: React.FC = () => {
       {/* Controls */}
       <button
         onClick={goToPrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black hover:text-white p-2 rounded-full hover:bg-gray-800 w-8 h-8 flex items-center justify-center"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2  text-black hover:text-white p-2 rounded-full hover:bg-gray-800 w-8 h-8 flex items-center justify-center"
       >
         &#8592;
       </button>
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black hover:text-white p-2 rounded-full hover:bg-gray-800 w-8 h-8 flex items-center justify-center"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2  text-black hover:text-white p-2 rounded-full hover:bg-gray-800 w-8 h-8 flex items-center justify-center"
       >
         &#8594;
       </button>
